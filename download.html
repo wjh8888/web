@@ -4,10 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>下载APP</title>
     <script src="//upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js"></script>
     <style>
+        html,body{
+            padding: 0;
+            margin: 0;
+        }
+        .RightTop {
+            position: fixed;
+            right: 0;
+        }
+        .LeftBottom {
+            position: fixed;
+            left: -78px;
+            bottom: 0;
+        }
+        .IcoDiv{
+            margin: auto;
+            text-align: center;
+            position: fixed;
+            top: 25vh;
+            width: 100%;
+        }
+        .DownloadButton{
+            height: 38px;
+            line-height: 35px;
+
+            background-color: #24a1e9;
+            border-radius: 3px;
+            color: white;
+            display: block;
+            
+            margin:20px;
+            text-decoration: none;
+        }
+        @-webkit-keyframes jackInTheBox {
+        from {
+            opacity: 0;
+            -webkit-transform: scale(0.1) rotate(30deg);
+            transform: scale(0.1) rotate(30deg);
+            -webkit-transform-origin: center bottom;
+            transform-origin: center bottom;
+        }
+
+        50% {
+            -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+        }
+
+        70% {
+            -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        }
+        @keyframes jackInTheBox {
+        from {
+            opacity: 0;
+            -webkit-transform: scale(0.1) rotate(30deg);
+            transform: scale(0.1) rotate(30deg);
+            -webkit-transform-origin: center bottom;
+            transform-origin: center bottom;
+        }
+        50% {
+            -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+        }
+
+        70% {
+            -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        }
+
+        .jackInTheBox {
+        -webkit-animation-name: jackInTheBox;
+        animation-name: jackInTheBox;
+        }
+
+        .animated {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+    </style>
 </head>
 <body>
+    <div class="RightTop">
+        <img src="./right_top.png" width="150" />
+    </div>
+
+    <div class="LeftBottom">
+        <img src="./left_bottom.png" width="150" />
+    </div>
+
+    <div class="IcoDiv animated jackInTheBox">
+        <img src="./ic_launcher.png" width="118px" alt="">
+        <br>
+        <span>福禄影视(安卓版)</span>
+        <br>
+        <span style="font-size: 14px;color: #8e8e8e;margin: 10px; display: block;">版本号:1.0</span>
+        <span style="font-size: 14px;color: #8e8e8e;margin: 0 30px; display: block;">绝版软件，新人送VIP，官方腾讯爱奇艺二合一，机会难得，无需任何手机权限，无须注册账号，放心使用。任何疑问请联系客服</span>
+
+        <a class="DownloadButton" href="https://wws.lanzouw.com/s/flvideo">立即前往下载</a>
+    </div>
+
 </body>
 </html>
+
+<script>
+
+</script>
